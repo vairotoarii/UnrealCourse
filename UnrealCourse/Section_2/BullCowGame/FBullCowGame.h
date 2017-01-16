@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 
+using FString = std::string;
+using int32 = int;
 
 class FBullCowGame
 {
@@ -9,7 +11,7 @@ public :
 	FBullCowGame(); // Constructor
 
 	
-	int GetMaxTries() const;
+	int32 GetMaxTries() const;
 	int GetCurrentTry() const;
 	bool IsGameWon() const;
 
@@ -22,6 +24,6 @@ public :
 private :
 	// See constructor for initialisation
 	int MyCurrentTry;
-	int MyMaxTries;
+	int32 MyMaxTries;
 
 };
