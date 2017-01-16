@@ -19,17 +19,18 @@ public :
 
 	
 	int32 GetMaxTries() const;
-	int GetCurrentTry() const;
+	int32 GetCurrentTry() const;
+	int32 GetHiddenWordLength() const;
 	bool IsGameWon() const;
+	bool CheckGuessValidity(FString) const;//TODO make more rich return value.
 
 	void Reset(); //TODO make more rich return value.
-	bool CheckGuessValidity(std::string);//TODO make more rich return value.
 	FBullCowCount SubmitGuess(FString);
 
 // Please try and ignore this and focus on the interface above.
 private :
 	// See constructor for initialisation
-	int MyCurrentTry;
+	int32 MyCurrentTry;
 	int32 MyMaxTries;
 	FString MyHiddenWord;
 };
