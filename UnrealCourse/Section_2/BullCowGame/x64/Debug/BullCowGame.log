@@ -1,3 +1,2 @@
 ﻿  main.cpp
-c:\users\hutia\documents\tutos\unrealcourse\section_2\bullcowgame\main.cpp(106): warning C4715: 'GetValidGuess': not all control paths return a value
   BullCowGame.vcxproj -> C:\Users\hutia\Documents\Tutos\UnrealCourse\Section_2\x64\Debug\BullCowGame.exe
